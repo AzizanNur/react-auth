@@ -1,9 +1,9 @@
 import react from 'react';
 
-const Home = () => {
+const Home = (props: {name: string}) => {
     return (
         <div>
-            ini Home
+            {props.name ? 'Hi ' + props.name : 'You are not logged in'}
         </div>
     );
 }
